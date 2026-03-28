@@ -42,7 +42,7 @@ export default function SystemStatus() {
     <div className="flex items-center gap-4 px-3 py-1.5 bg-gray-800/50 rounded-lg border border-gray-700/50">
       <Dot loading={loading} ok={!!health?.llm?.key_set} label={health?.llm?.model || 'Groq'} />
       <div className="w-px h-3 bg-gray-700" />
-      <Dot loading={loading} ok={!!health?.rag?.backend} label={health?.rag?.backend === 'pinecone' ? 'Pinecone' : health?.rag?.pinecone_configured ? 'RAG (Pinecone ready)' : 'RAG (TF-IDF)'} />
+      <Dot loading={loading} ok={health?.rag?.backend === 'pinecone'} label={health?.rag?.backend === 'pinecone' ? 'Pinecone' : 'RAG (TF-IDF)'} />
       <div className="w-px h-3 bg-gray-700" />
       <Dot loading={loading} ok={!!health?.gmail?.connected} label={health?.gmail?.connected ? 'Gmail' : 'Gmail (off)'} />
     </div>
