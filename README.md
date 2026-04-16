@@ -1,6 +1,6 @@
 # AI Sales Co-Pilot — Multi-Agent GTM System
 
-A fully offline-capable, 10-agent AI pipeline for B2B lead generation, research, and personalized outreach.
+A 10-agent AI pipeline for B2B lead generation, research, and personalized outreach.
 
 ---
 
